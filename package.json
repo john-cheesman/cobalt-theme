@@ -1,0 +1,8 @@
+{
+  "name": "cobalt-theme",
+  "version": "0.0.0",
+  "description": "A base blog theme",
+  "repository": "https://github.com/johncheesman/cobalt-theme.git",
+  "author": "John Cheesman",
+  "license": "MIT"
+}
