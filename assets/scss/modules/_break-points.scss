@@ -1,0 +1,18 @@
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+// ~ Break Points Mixin                                                      ~
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+// Creates a media query for the chosen break point
+//     $point: name of the break point
+// ---------------------------------------------------------------------------
+@mixin bp($point) {
+    $medium: '(min-width: 800px)';
+    $large:  '(min-width: 1100px)';
+
+    @if $point == medium {
+        @media #{$medium} { @content; }
+    }
+    @else if $point == large {
+        @media #{$large} { @content; }
+    }
+}

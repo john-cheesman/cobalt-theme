@@ -1,0 +1,19 @@
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+// ~ Icon List Mixin                                                         ~
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+// Layout a horizontal list of buttons with icons
+// ---------------------------------------------------------------------------
+@mixin icon-list() {
+    @include inline-block;
+
+    margin-left: ($spacing-unit / 2);
+
+    a {
+        display: block;
+    }
+
+    span {
+        @include visually-hidden;
+    }
+}

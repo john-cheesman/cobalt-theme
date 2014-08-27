@@ -1,0 +1,78 @@
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+// ~ Base                                                                    ~
+// ~ ----------------------------------------------------------------------- ~
+// ~ Import shared styles                                                    ~
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+// Variables
+// ---------------------------------------------------------------------------
+
+// Dimensions
+$container-width:   1080px !default;
+$spacing-unit:      22px !default;
+
+// Palettes
+$palettes: (
+    white: (
+        medium: rgb(255,255,255)
+    ),
+    navy: (
+        medium: rgb(40,39,129)
+    ),
+    blue: (
+        light: rgb(188,228,250),
+        medium: rgb(88,176,227),
+        dark: rgb(0,144,215)
+    ),
+    grey: (
+        extra-light: rgb(239,239,239),
+        light: rgb(218,218,218),
+        medium: rgb(178,178,178),
+        dark: rgb(87,87,87)
+    ),
+    red: (
+        light: rgb(239,130,114),
+        medium: rgb(232,74,56),
+        dark: rgb(227,3,46)
+    ),
+    orange: (
+        light: rgb(244,159,87),
+        medium: rgb(239,126,49),
+        dark: rgb(232,78,27)
+    ),
+    green: (
+        light: rgb(184,211,120),
+        medium: rgb(147,193,74),
+        dark: rgb(101,178,46)
+    ),
+    lime: (
+        light: rgb(219,224,118),
+        medium: rgb(199,212,64),
+        dark: rgb(174,201,11)
+    ),
+    social: (
+        facebook: rgb(67,98,171),
+        twitter: rgb(43,169,225),
+        google-plus: rgb(221,75,57),
+        youtube: rgb(204,24,30),
+        pinterest: rgb(205,33,41),
+        linkedin: rgb(0,123,182)
+    )
+) !default;
+
+// Transition
+$link-transition:   color 0.2s linear !default;
+$button-transition: background-color 0.2s linear !default;
+
+// Heading scale
+$alpha:             28 !default;
+$beta:              26 !default;
+$gamma:             24 !default;
+$delta:             20 !default;
+$epsilon:           18 !default;
+$zeta:              14 !default;
+
+// Import normalize and modules
+// ---------------------------------------------------------------------------
+@import 'vendor/normalize';
+@import 'modules/all';

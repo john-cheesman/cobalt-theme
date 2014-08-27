@@ -1,0 +1,33 @@
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+// ~ Heading Mixin                                                           ~
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+// Apply heading font styles based on a pre-defined scale
+//     $point: The point in the scale
+// ---------------------------------------------------------------------------
+@mixin heading($point) {
+    @if $point == alpha {
+        @include font-size($alpha);
+        margin: 0 0 22px 0;
+    }
+    @else if $point == beta {
+        @include font-size($beta);
+        margin: 0 0 22px 0;
+    }
+    @else if $point == gamma {
+        @include font-size($gamma);
+        margin: 0 0 22px 0;
+    }
+    @else if $point == delta {
+        @include font-size($delta);
+        margin: 0 0 22px 0;
+    }
+    @else if $point == epsilon {
+        @include font-size($epsilon);
+        margin: 0;
+    }
+    @else if $point == zeta {
+        @include font-size($zeta);
+        margin: 0;
+    }
+}

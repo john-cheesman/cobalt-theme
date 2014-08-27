@@ -1,0 +1,19 @@
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+// ~ Inline Block Mixin                                                      ~
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+// Display inline block, add vertical alignment and reset margin
+//     $align: Set optional vertical alignment
+// ---------------------------------------------------------------------------
+@mixin inline-block($align: top) {
+    display: inline-block;
+    margin-left: -4px;
+
+    @if $align {
+        vertical-align: $align;
+    }
+
+    &:first-child {
+        margin-left: 0;
+    }
+}

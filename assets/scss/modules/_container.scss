@@ -1,0 +1,12 @@
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+// ~ Container Mixin                                                         ~
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+// Centre horizontally, apply max-width and padding
+//     $max-width: The maximum width in any unit
+// ---------------------------------------------------------------------------
+@mixin container($max-width: $container-width) {
+    margin: 0 auto;
+    padding: 0 ($spacing-unit / 2);
+    max-width: $max-width;
+}
