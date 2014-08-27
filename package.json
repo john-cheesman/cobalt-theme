@@ -4,5 +4,15 @@
   "description": "A base blog theme",
   "repository": "https://github.com/johncheesman/cobalt-theme.git",
   "author": "John Cheesman",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-autoprefixer": "0.0.9",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.3.4",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^0.7.3",
+    "gulp-uglify": "^0.3.2",
+    "run-sequence": "^0.3.6"
+  }
 }
